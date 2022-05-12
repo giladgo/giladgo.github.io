@@ -2,12 +2,21 @@
   <head>
     <style>
       .erik {
-        width: 450px;
-        height: 450px;
         border-radius: 100%;
         background: url('https://media-exp1.licdn.com/dms/image/C4E03AQGZt9ixlRPnNg/profile-displayphoto-shrink_800_800/0/1517734944820?e=1657756800&v=beta&t=yv3H9jaFQGY8LFAaUnh0aOB_sVj6nZD_YSQVWhxfXMw');
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center center;
         cursor: pointer;
         border: solid 1px red;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+        height: 100%;
+        max-width: 450px;
+        max-height: 450px;
       }
       .erik:hover {
          box-shadow: 10px 15px 15px red;
