@@ -1,0 +1,43 @@
+<html>
+  <head>
+    <link rel="icon" type="image/x-icon" href="./rbz.jpeg">
+    <title>The RBZ Button&trade;</title>
+    <style>
+      body {
+        background-color: #49d6f5;
+      }
+      .rbz {
+        border-radius: 100%;
+        background: url('./rbz.jpeg');
+        background-color: white;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center center;
+        cursor: pointer;
+        border: solid 1px red;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 100vw;
+        height: 100vw;
+        max-width: 450px;
+        max-height: 450px;
+        transition: all 250ms;
+      }
+      .rbz:hover {
+         box-shadow: 10px 15px 15px red;
+         transform: translate(-50%, -50%) rotate(45deg);
+      }
+      .rbz:active {
+        box-shadow: inset 0 0 10px red;
+      }
+    </style>
+  </head>
+  <body>
+    	<audio id="s" preload>
+  	  <source src="./rimshot.mp3" type="audio/mpeg">
+    </audio>
+  </body>
+  <div class="rbz" onclick="document.getElementById('s').play();"></div>
+</html>
